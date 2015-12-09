@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title>Free HTML5 Templates</title>
+  <link rel="stylesheet" href="jquery-ui.min.css"> </link>
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="jquery-ui-1.11.4/jquery-ui.js"></script>
+	<script src="jquery.maskedinput.min.js" ></script>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+<script>
+		$(function(){
+			$("#txtFone").mask("(99)9999-9999");
+			$("#txtCep").mask("99999-999");
+			$("#txtCpf").mask("999999999-99");
+			$("#txtPlaca").mask("aaa-9999");
+			$("#txtData").mask("99/99/9999");
+			
+			$("#txtPlaca").blur(function(){
+				var maiusculo = $("#txtPlaca").val().toUpperCase();
+				$("#txtPlaca").val(maiusculo);
+			});
+		});
+	</script>
+  </head>
+
+<body>
+  <div id="main">
+    <header>
+	  <div id="banner">
+	    <div id="welcome">
+	      <h3>Official Page -<span id="titulofilme"> Creepypasta Land</span></h3>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h3>Go to Sleep.</h3>
+	    </div><!--close welcome_slogan-->			
+	  </div><!--close banner-->
+    </header>
+
+	<nav>
+	  <div id="menubar">
+        <ul id="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div><!--close menubar-->	
+	</nav>
+    
+	<div id="site_content">		
+
+            <h1>Contato</h1>
+            <p style="padding-bottom: 15px;">Se quiser enviar sua história ou tirar alguma duvida faça-o por meio desse formulário.</p>           
+			<label for="txtNome">Nome:</label>
+			<input type="text" id="txtNome" /><br />
+			<label for="txtFone">Telefone:</label>
+			<input type="text" id="txtFone" /><br />
+			<label for="txtCep">Cep:</label>
+			<input type="text" id="txtCep" /><br />
+			<label for="txtCpf">Cpf:</label>
+			<input type="text" id="txtCpf" /><br />
+			Mensagem: <textarea></textarea>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="button" name="contact_submitted" value="Enviar" onclick="enviado();" /></p>
+            	
+  </div>
+  
+    <footer>
+	  <a href="index.html">Inicio</a> | <a href="galeria.html">Galeria</a> | <a href="videos.html">Videos</a> | <a href="contato.html">Contato</a><br/><br/>
+    </footer>
+
+  <!-- javascript at the bottom for fast page loading 
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>  -->
+  
+</body>
+<script>
+	function enviado()
+	{
+		alert("Enviado com sucesso.")
+	}
+</script>
+</html>

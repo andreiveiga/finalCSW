@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title>Creepypastas - Galeria</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/bgfader.js"></script>
+	<link rel="stylesheet" href="css/bgfader.css">
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+<style>
+		.banner { height:400px; margin-right: 500px; margin-left: 500px }
+		.rodape {margin-bottom: 500px; }
+	</style>
+  </head>
+
+<body>
+<div id="display"></div>
+	<audio id="tocador" onended="proximo();" controls="controls"></audio>
+	<br/>
+	<input type="image" src="imagens/anterior.jpg" onclick="anterior();" /> - <input type="image" src="imagens/proximo.jpg" onclick="proximo();" />
+
+	<script>
+	var $tocador = document.getElementById("tocador");
+	var $display = document.getElementById("display");
+
+	var musicas = new Array("musica.mp3", "musica2.mp3");
+	//Vai indicar qual posição do array está tocando no momento
+	var tocando = 0;
+	function anterior()
+	{
+		if(tocando==0)
+		{
+			tocando = musicas.length-1;
+		}
+		else
+		{
+			tocando = tocando - 1;	
+		}
+		
+		tocar();
+	}
+	function proximo()
+	{
+		if(tocando == musicas.length-1)
+		{
+			tocando = 0;
+		}
+		else
+		{
+			tocando = tocando+1;
+		}
+		tocar();
+
+	}
+
+	function tocar()
+	{
+		tocador.src = musicas[tocando];
+		tocador.play();
+		display.innerHTML = musicas[tocando];
+	}
+
+	
+
+	</script>
+  <div id="main">
+    <header>
+	  <div id="banner">
+	    <div id="welcome">
+	      <h3>Official Page -<span id="titulofilme"> Creepypasta Land</span></h3>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h3>Go to Sleep.</h3>
+	    </div><!--close welcome_slogan-->			
+	  </div><!--close banner-->
+    </header>
+
+	<nav>
+	  <div id="menubar">
+        <ul id="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div><!--close menubar-->	
+	</nav>	
+    
+	<div class="banner">
+		
+	</div>
+	
+	<script>
+		var myBgFader = $('.banner').bgfader([
+  'imagens/image1.jpg',
+  'imagens/image2.jpg',
+  'imagens/image3.jpg',
+  'imagens/image4.jpg',
+  'imagens/image5.jpg',
+], {
+  'timeout': 1000,
+  'speed': 1000,
+  'opacity': 0.5
+})
+
+		myBgFader.start()
+	</script>
+    <footer>
+	  <a href="index.html">Inicio</a> | <a href="galeria.html">Galeria</a> | <a href="videos.html">Videos</a> | <a href="contato.html">Contato</a><br/><br/>
+    </footer>
+
+  <!-- javascript at the bottom for fast page loading -->
+  
+  <script type="text/javascript" src="js/image_slide.js"></script>  
+  
+</body>
+</html>

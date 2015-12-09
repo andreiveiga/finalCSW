@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title>Creepypastas - Inicio</title>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  	
+</head>
+<body>
+  <div id="display"></div>
+	<audio id="tocador" onended="proximo();" controls="controls"></audio>
+	<br/>
+	<input type="image" src="imagens/anterior.jpg" onclick="anterior();" /> - <input type="image" src="imagens/proximo.jpg" onclick="proximo();" />
+
+	<script>
+	var $tocador = document.getElementById("tocador");
+	var $display = document.getElementById("display");
+
+	var musicas = new Array("musica.mp3", "musica2.mp3");
+	//Vai indicar qual posição do array está tocando no momento
+	var tocando = 0;
+	function anterior()
+	{
+		if(tocando==0)
+		{
+			tocando = musicas.length-1;
+		}
+		else
+		{
+			tocando = tocando - 1;	
+		}
+		
+		tocar();
+	}
+	function proximo()
+	{
+		if(tocando == musicas.length-1)
+		{
+			tocando = 0;
+		}
+		else
+		{
+			tocando = tocando+1;
+		}
+		tocar();
+
+	}
+
+	function tocar()
+	{
+		tocador.src = musicas[tocando];
+		tocador.play();
+		display.innerHTML = musicas[tocando];
+	}
+
+	
+
+	</script>
+  <div id="main">
+    <header>
+	  <div id="banner">
+	    <div id="welcome">
+	      <h3>Official Page -<span id="titulofilme"> Creepypasta Land</span></h3>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h3>Go to Sleep.</h3>
+	    </div><!--close welcome_slogan-->			
+	  </div><!--close banner-->
+    </header>
+
+	<nav>
+	  <div id="menubar">
+        <ul id="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div><!--close menubar-->	
+    </nav>	
+    
+	<div id="site_content">	
+
+      <div class="slideshow">
+	    <ul class="slideshow">
+          <li class="show"><img width="900" height="250" src="images/img1.jpg" alt="&quot;Nem tudo é o que parece&quot;" /></li>
+          <li><img width="900" height="250" src="images/img2.jpg" alt="&quot;He's always watching you.&quot;" /></li>
+        </ul> 
+	  </div>	
+	
+	  <div id="content">
+        <div class="content_item">
+		  <h1>O que é uma creepypasta ?</h1> 
+			<p>Creepypastas são contos de terror (geralmente de autores anônimos) que se originaram na internet e são passadas entre fóruns, blogs e outros sites para assustar e perturbar seus leitores. O nome "Creepypasta" se originou das palavras "Creepy" que significa assustador e "copypasta" que é uma gíria para especificar textos que são copiados e colados várias vezes de site para site. Algumas Creepypastas são incrementadas com imagens, áudios e/ou vídeos relacionadas a história, tipicamente com cenas distorcidas, grotesca ou de qualquer conteúdo chocante. Seus temas são muito variados, mas os principais encontramos são Mindfuck, vídeo-game, episódio perdido, rituais, fantasmas, demônios, diários encontrados e muitos outros.</p>   		
+		  
+		  <div class="content_imagetext">
+		    <div class="content_image">
+		      <img src="imagens/boneca.jpg" alt="image1"/>
+	        </div>
+				<p> </p>
+		  </div><!--close content_imagetext-->
+		 </div>
+	   </div>
+		<div id="accordion">
+			<h3>Tunel</h3>
+			<div>
+			<p>Antes que eu comece, existem duas informações que você deve considerar:
+Você já percebeu que assim que um espelho reflete em outro espelho, depois daquela imagem se repetir várias e várias vezes, tudo começa a se tornar uma grande e infinita escuridão? O espelho pode até estar quebrado, não importa.  A luz vai sempre desaparecer e apenas um eterno túnel escuro irá ficar ali. Não é uma boa ideia criar esses túneis, mas pra quem é curioso – e eu sei que você é – eles podem ser interessantes.
+Outra coisa, sim, a sua sósia vive do outro lado do espelho. A parte boa é que eles são inofensivos e não fazem a menor ideia que você existe. Por que eles questionariam suas intenções quando eles não têm nenhuma? Eles vivem com a mesma quantidade de paz que você se permite ter.
+Não importa a hora, o dia e o lugar, mas quanto mais escuro for, melhor. É bom também verificar a hora exata que você começar por razões que explicarei depois; você deve ter dois espelhos, um de frente para o outro com pelo menos um metro de distância entre eles. Pare no meio e não faça um som sequer. Na verdade, se for possível, ao conseguir a localização, evite lugares com barulhos externos, esse é um detalhe muito importante, pois eles se assustam facilmente... Especialmente no começo.
+Você deve observar seu próprio reflexo no espelho que você escolher.
+Conte quantos reflexos você puder até que você possa ver a escuridão aparecendo, dependendo da quantidade de luz em que você está localizado, esse passo não levará mais de 20 minutos. Sinta-se a vontade para contar na velocidade que quiser.
+Assim que você começa a enxergar a escuridão, seus olhos vão capturar uma forma pálida emergindo nos túneis e depois fugindo do seu campo de visão. Isso pode ser apenas sua mente tentando te enganar no começo, mas logo você realmente poderá vê-los mais e mais nitidamente. Quando eles começarem a aparecer em intervalos menores você poderá sentir uma alteração da sua própria imagem no seu reflexo, mesmo que ao toque seu rosto ainda seja o mesmo.
+Se alcançar esse ponto, saia de perto dos espelhos imediatamente, deixe o quarto – ou qualquer local que você escolheu – e feche a porta atrás de você. Eles acordaram.
+Se no segundo dia você sentir a curiosidade que sentiu no primeiro, pode repetir o mesmo processo descrito acima. Deve começar no mesmo horário do dia anterior, esse é o motivo pelo qual você deveria ter gravado a hora exata. Aquelas coisas que você viu por apenas alguns momentos podem aparecer mais rapidamente caso tenham confiado em você, seu reflexo pode aparecer um pouco tremulo, mas é apenas um truque da mente, nada que você deva se preocupar.
+Assim que você terminar de contar o máximo de reflexos que conseguir, pisque apenas uma vez para recuperar o foco e não feche os olhos novamente – não é como se você pudesse mesmo se quisesse –.
+Você vai notar que eles começam a aparecer não só nos reflexos mais distantes como nos mais próximos também, mas você não sabe dizer se eles tem rosto ou feições que lembram humanos.
+Não deixe sua curiosidade te cegar, procurar por semelhanças humanas em algum deles é inútil, mesmo sabendo que você vai continuar tentando entendê-los.
+Se eles aparecerem com menos de seis reflexos distantes do seu, eles se tornaram finalmente confortáveis com sua presença e você, com a deles. Eles se tornaram bonitos demais para serem ignorados; você ficou concentrado demais para notar seu próprio reflexo te avisando, apontando e te mostrando a coisa que tentava desesperadamente te alcançar no espelho atrás de você.</p>
+			</div>
+			<h3>Fitas sobre minha amnésia</h3>
+			<div>
+				<p> Dentre as culturas do Oriente e Ocidente africano, há o mito do Picha Mlaji, ou Devorador de Fotos. A lenda surgiu no final dos anos 80, nas sombrias áreas de dominação europeia no oriente africano, mas a lenda parece ter alcançado o Cairo, o Congo Belga e talvez até uma parte da índia. Apesar das muitas variações na lenda, um garoto desnutrido em uma bicicleta parece sempre ser o catalisador para uma série de acontecimentos.
+				A prática da fotografia estava se infiltrando lentamente no continente africano e era utilizado apenas pelos administradores das colônias, para terem uma identificação por foto de seus oficiais e ocasionalmente registrarem algum momento importante.
+Geralmente, a lenda conta que o garoto surge de bicicleta em algum vilarejo africano e pergunta para alguma pessoa, se ela sabe o que é fotografia. Se a resposta for “sim”, o garoto perguntará se a pessoa tem alguma foto e se ele pode ver. Se a resposta for “não”, o garoto se afastará para perguntar a outra pessoa. Se a pessoa mostrar uma foto para o garoto (ou Picha Mlaji), ele a pegará imediatamente e fugirá de modo tão rápido que ninguém poderá para-lo.
+ Algumas noites após o roubo da foto, qualquer pessoa que estiver nela, tirando a própria pessoa que mostrou a foto para o garoto se ela também estiver nela, morrerá de alguma das duas formas abaixo:
+				<ul>
+				
+    <li>A primeira e a mais comum é a que a vítima desaparece por dois dias e duas noites, retornando apenas como uma pilha de ossos quebrados. 
+	<li>Os ossos estão quebrados de maneira que o tutano pudesse ser consumido. O crânio é o único intacto; porém, ele é posto no topo da pilha de ossos quebrado com a foto presa entre os dentes. A pessoa desaparecida estará riscada ou queimada na foto. O processo continuará até que todas as pessoas na foto sejam devoradas, com uma nova cópia da foto surgindo na pilha de ossos.</li>
+    <li>A segunda forma ocorreu apenas em regiões sudaneses, e é mais detalhada: o corpo da pessoa desaparecida surgirá mais rápido – apenas um dia, ou mesmo algumas horas – e mais intacto se comparado à primeira forma. Mas estará coberto por marcas de mordidas, pedaços de carne e músculos arrancados assim como os olhos. O corpo estará em avançado estado de decomposição, mesmo que estivesse desaparecido por no máximo 30 horas. A foto original estará amassada na mão da última vítima com a imagem das outras vítimas riscadas assim como na primeira foto.</li>
+	</ul>
+	Mais perturbador que as formas como as vítimas são canibalizadas, é como o garoto continua a perseguir a pessoa de quem roubou a foto, ameaçando-a a ter o mesmo destino das outras vítimas a não ser que mais fotos lhe sejam entregues. Vilarejos inteiros desapareceram em questão de dias. O destino da pessoa que inicia tudo isso varia, algumas ficam sem fotos e são devoradas, outras são deixadas vivas para espalhar a lenda, embora não demorem muito para morrer por fraqueza ou execução como culpadas pelas mortes.
+Os casos de Picha Mlaji foram gradualmente perdendo força com o passar dos séculos, mas acredita-se que a criatura tenha reaparecido durante a Primeira guerra civil na Libéria, onde várias crianças soldado foram encontradas mutiladas de maneiras similares às antigas vítimas do Picha Mlaji, com a última criança sendo encontrada com uma foto amassada na mão. A foto tinha sido tirada duas semanas antes de ser encontrada, e mostrava uma unidade de crianças soldado.</p>
+		</div>
+	</div>  
+ <script> $( "#accordion" ).accordion({
+	collapsible: true
+ });
+	
+ </script>
+    <footer>
+	  <a href="index.html">Inicio</a> | <a href="galeria.html">Galeria</a> | <a href="videos.html">Videos</a> | <a href="contato.html">Contato</a><br/><br/>
+    </footer>
+	
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+  
+</body>
+</html>
